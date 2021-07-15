@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> - Responsive HTML5 Portfolio Template</title>
+    <title> -Botjuggler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
@@ -12,6 +12,35 @@
     <link rel="stylesheet" type="text/css" href="styles/elements.css">
     <link rel="stylesheet" type="text/css" href="styles/custom.css">
     <link rel="icon" type="image/png" href="favicon.png?version=4">
+
+    <style>
+
+    .view-app-button{
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 43px;
+      width: 121px;
+      /* outline: brown; */
+      border-radius: 16px;
+      background: #65acf3;
+      color: white;
+      border: 1px solid #c7c7c7;
+    }
+
+    .view-app-button a{
+
+      text-decoration: none;
+      color: white;
+    }
+
+
+
+    .view-app-button:focus {
+        outline: none;
+      }
+    </style>
   </head>
   <body class="preload">
     <div class="container-fluid">
@@ -33,29 +62,31 @@
           </div>
         </div>
       </header>
-      <section class="grid-portfolio fadein">
-        <div class="grid-images space">
-          <div class="item-sizer"></div><a class="item" href="sarthak-fm.html" style="background-image: url(img/work/sarthak.jpg)">
-            <div class="caption">
-              <h4>Sarthak FM</h4>
-            </div></a><a class="item lightbox" href="botjuggler.html" style="background-image: url(img/portfolio/blue-bag.jpg)">
-            <div class="caption">
-              <h4>Botjuggler</h4>
-            </div></a><a class="item" href="work-single.html" style="background-image: url(img/portfolio/face-front.jpg)">
-            <div class="caption">
-              <h4>Engage</h4>
-            </div></a><a class="item" href="work-single.html" style="background-image: url(img/portfolio/yellow-book.jpg)">
-            <div class="caption">
-              <h4>Nasty Paper</h4>
-            </div></a><a class="item lightbox" href="img/portfolio/vui.jpg" style="background-image: url(img/portfolio/vui.jpg)">
-            <div class="caption">
-              <h4>Pluch / lightbox</h4>
-            </div></a><a class="item" href="work-single.html" style="background-image: url(img/portfolio/logo-a.jpg)">
-            <div class="caption">
-              <h4>Vpside down</h4>
-            </div></a>
+
+     <img class="fadein wide hero-img" src="img/work/sarthak.jpg">
+      <section class="content fadein">
+        <div class="container-fluid mt-lg">
+          <div class="row">
+            <div class="col-md-8 offset-2">
+              <p><strong>Botjuggler</strong></p>
+              <p>Botjuggler is a Do It Yourself chatbot builder which enables anyone to build chatbots for websites without knowing any coding skills. All the user needs to do is sign up for an account, select a chatbot template of choice, customize the look and feel of chatbot according to his requirement, use the easy to use builder to set up chatbot conversations once done click publish button to generate chatbot script to place in the website.</p>
+              
+
+              <p><strong>Technologies</strong></p>
+              <p>Live Radio, Live 24X7 web channel in app, On Demand Videos and other interactive features.</p>
+              
+
+              <p><strong>Technology</strong></p>
+              <p>PHP, Laravel, AWS, HTML - CSS- JavaScript</p>
+              
+            </div>
+          </div>
         </div>
+
+        <button class="view-app-button"><a href="https://play.google.com/store/apps/details?id=com.sarthakfm&hl=en_IN&gl=US">View App</a></button>
       </section>
+     
+      <section class="next-page"></section>
       <footer>
         <div class="container-fluid">
           <div class="row">
@@ -65,7 +96,6 @@
       </footer>
     </div>
     <script src="scripts/vendor.js"></script>
-    <script src="plugins/tera-lightbox/tera-lightbox.js"></script>
     <script src="scripts/main.js"></script>
     <!-- The type animation script-->
     <script>if(document.querySelector('.typed')) var typed = new Typed('.typed', { strings: ["Write me, please.", "Hola", "こんにちは", "Ciao", "Aloha", "Hallo"], typeSpeed: 130, loop: true });</script>
